@@ -1,31 +1,26 @@
 import { css } from 'styled-components/macro';
 
 const fonts = css`
-  /* Uncomment the lines below if you have custom font files in public/fonts */
-
-  /* @font-face {
-    font-family: 'Circular Std';
-    src: url('../fonts/CircularStd-Book.woff2') format('woff2'),
-    url('../fonts/CircularStd-Book.woff') format('woff');
+  @font-face {
+    font-family: 'Pixelfy';
+    src: url('../fonts/PixelifySans-Regular.ttf') format('ttf');
     font-weight: 400;
     font-style: normal;
   }
 
   @font-face {
-    font-family: 'Circular Std';
-    src: url('../fonts/CircularStd-Bold.woff2') format('woff2'),
-    url('../fonts/CircularStd-Bold.woff') format('woff');
+    font-family: 'Pixelfy';
+    src: url('../fonts/PixelifySans-SemiBold.ttf') format('ttf');
     font-weight: 700;
     font-style: normal;
   }
 
   @font-face {
-    font-family: 'Circular Std';
-    src: url('../fonts/CircularStd-Black.woff2') format('woff2'),
-    url('../fonts/CircularStd-Black.woff') format('woff');
+    font-family: 'Pixelfy';
+    src: url('../fonts/PixelifySans-Bold.ttf') format('ttf');
     font-weight: 900;
     font-style: normal;
-  } */
+  }
 `;
 
 export default fonts;

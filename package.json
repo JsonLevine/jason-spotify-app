@@ -1,7 +1,7 @@
 {
   "name": "jason-spotify-app",
   "version": "1.0.0",
-  "description": "spotify app",
+  "description": "Spotify app",
   "main": "index.js",
   "scripts": {
     "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
@@ -9,6 +9,7 @@
     "client": "cd client && npm start",
     "postinstall": "cd client && npm install"
   },
+  "keywords": [],
   "author": "Jason Levine",
   "license": "ISC",
   "dependencies": {
