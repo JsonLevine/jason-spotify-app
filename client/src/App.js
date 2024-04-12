@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
-import { catchErrors } from './utils';
-import { accessToken, logout, getCurrentUserProfile } from './spotify';
+import { accessToken, logout } from './spotify';
 import {
   BrowserRouter as Router,
   Switch,
@@ -9,8 +8,7 @@ import {
 } from 'react-router-dom';
 import { GlobalStyle } from './styles';
 import styled from 'styled-components/macro';
-import { Login, Profile } from './pages';
-
+import { Login, Profile, TopArtists, TopTracks } from './pages';
 const StyledLogoutButton = styled.button`
   position: absolute;
   top: var(--spacing-sm);
@@ -60,10 +58,10 @@ function App() {
             <ScrollToTop />
             <Switch>
               <Route path="/top-artists">
-                <h1>Top Artists</h1>
+                <TopArtists />
               </Route>
               <Route path="/top-tracks">
-                <h1>Top Tracks</h1>
+                <TopTracks />
               </Route>
               <Route path="/playlists/:id">
                 <h1>Playlist</h1>
