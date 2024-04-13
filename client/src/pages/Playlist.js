@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { catchErrors } from '../utils'
 import { getPlaylistById, getAudioFeaturesForTracks } from '../spotify';
-import { TrackList, SectionWrapper } from '../components';
+import { TrackList, SectionWrapper, Loader } from '../components';
 import { StyledHeader, StyledDropdown } from '../styles';
 
 const Playlist = () => {
@@ -143,8 +143,10 @@ const sortedTracks = useMemo(() => {
                 </StyledDropdown>
               </div>
 
-            {sortedTracks && (
+              {sortedTracks ? (
                 <TrackList tracks={sortedTracks} />
+              ) : (
+                <Loader />
               )}
             </SectionWrapper>
           </main>
